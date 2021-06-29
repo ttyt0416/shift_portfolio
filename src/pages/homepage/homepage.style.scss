@@ -1,0 +1,37 @@
+.homepage {
+  display: flex;
+  justify-content: space-around;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &-headline {
+      margin-top: 10rem;
+      font-size: 4.5rem;
+    }
+
+    &-text {
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    padding-right: 15rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
