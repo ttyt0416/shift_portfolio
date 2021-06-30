@@ -3,9 +3,7 @@ import "./homepage.style.scss";
 
 import { Link } from "react-router-dom";
 
-import Wallpaper from "../../components/wallpaper/wallpaper.component";
-
-const HomePage = (homepage) => {
+const HomePage = () => {
   return (
     <div className="homepage">
       <div className="homepage__intro">

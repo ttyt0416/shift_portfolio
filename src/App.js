@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 
 import HomePage from "./pages/homepage/homepage.component";
 import FirstPage from "./pages/firstpage/firstpage.component";
@@ -15,12 +15,14 @@ import ContactPage from "./pages/contactpage/contactpage.component";
 import Header from "./components/header/header.component";
 import WallPaper from "./components/wallpaper/wallpaper.component";
 
-const App = ({ isHomePage = false }) => {
+const App = () => {
+  let location = useLocation();
+
   return (
     <div>
-      {isHomePage ? null : <Header />}
+      {location.pathname === "/" ? null : <Header />}
       <Switch>
-        <Route exact path="/" component={HomePage} isHomePage={true} />
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/first" component={FirstPage} />
         <Route exact path="/second" component={SecondPage} />
         <Route exact path="/third" component={ThirdPage} />
@@ -29,7 +31,7 @@ const App = ({ isHomePage = false }) => {
         <Route exact path="/sixth" component={SixthPage} />
         <Route exact path="/contact" component={ContactPage} />
       </Switch>
-      {isHomePage ? null : <WallPaper />}
+      <WallPaper />
     </div>
   );
 };

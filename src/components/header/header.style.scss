@@ -2,7 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   position: fixed;
+  justify-content: space-around;
+  margin: 2% 0.5% 0 0.5%;
+  width: 50%;
 
   &__link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
