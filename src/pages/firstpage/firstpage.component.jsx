@@ -6,9 +6,9 @@ import img from "../../assets/images/thumbs/01.jpg";
 const FirstPage = () => {
   return (
     <div className="firstpage">
-      <div className="firstpage__intro">
+      {/* <div className="firstpage__intro">
         <h1 className="firstpage__intro-headline">First Page</h1>
-      </div>
+      </div> */}
       <div className="firstpage__content">
         <p className="firstpage__content-text">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Duis dapibus

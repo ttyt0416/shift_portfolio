@@ -14,13 +14,16 @@ import ContactPage from "./pages/contactpage/contactpage.component";
 
 import Header from "./components/header/header.component";
 import WallPaper from "./components/wallpaper/wallpaper.component";
+import Title from "./components/title/title.component";
 
 const App = () => {
   let location = useLocation();
+  let pathname = location.pathname;
 
   return (
     <div>
-      {location.pathname === "/" ? null : <Header />}
+      {pathname === "/" ? null : <Header />}
+      {pathname === "/" || pathname === "/contact" ? null : <Title />}
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/first" component={FirstPage} />

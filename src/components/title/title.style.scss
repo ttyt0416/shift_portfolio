@@ -1,0 +1,10 @@
+.title {
+  width: 100%;
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 10rem;
+
+  & > h1 {
+    font-size: 3rem;
+  }
+}

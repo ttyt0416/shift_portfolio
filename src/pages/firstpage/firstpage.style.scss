@@ -1,21 +1,22 @@
 .firstpage {
   width: 100%;
+  height: 100%;
   position: absolute;
 
-  &__intro {
-    width: 50%;
-    margin-top: 12rem;
-    margin-left: 10rem;
+  // &__intro {
+  //   width: 50%;
+  //   margin-top: 12rem;
+  //   margin-left: 10rem;
 
-    &-headline {
-      font-size: 3rem;
-    }
-  }
+  //   &-headline {
+  //     font-size: 3rem;
+  //   }
+  // }
 
   &__content {
     position: absolute;
     width: 50%;
-    height: 100%;
+    // height: 100%;
     right: 0;
     top: 0;
     margin-top: 10rem;
@@ -28,13 +29,12 @@
     }
 
     &-img {
-      height: 100%;
       margin: auto 3rem;
     }
 
     &-img > img {
       width: 100%;
-      height: 100%;
+      height: 20rem;
     }
   }
 }
