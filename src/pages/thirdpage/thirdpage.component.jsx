@@ -18,7 +18,7 @@ const ThirdPage = () => {
 
   return (
     <div className="thirdpage">
-      <p classname="thirdpage__text">
+      <p className="thirdpage__text">
         Integer mollis egestas nam maximus erat id euismod egestas. Pellentesque
         sapien ac quam. Lorem ipsum dolor sit nullam.
       </p>

@@ -18,15 +18,6 @@ const Header = () => {
       <Link className="header__link" to="/third">
         third
       </Link>
-      <Link className="header__link" to="/forth">
-        forth
-      </Link>
-      <Link className="header__link" to="/fifth">
-        fifth
-      </Link>
-      <Link className="header__link" to="/sixth">
-        sixth
-      </Link>
       <Link className="header__link" to="/contact">
         건의
       </Link>
